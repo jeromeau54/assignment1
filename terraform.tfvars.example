@@ -1,0 +1,11 @@
+# Copy this file to terraform.tfvars and fill in your real values.
+# terraform.tfvars is gitignored — never commit it.
+# Terraform reads this automatically — no manual loading needed.
+
+db_password          = "your-strong-password"
+
+cloudflare_api_token = "your-cloudflare-api-token"
+cloudflare_zone_id   = "your-32-char-hex-zone-id"    # Zone ID from Cloudflare Overview page (NOT the API token)
+domain_name          = "assignment1.yourdomain.com"   # full domain — used for Nginx + Certbot
+dns_record_name      = "your-dns-record"              # subdomain part only — used for the Cloudflare A record
+certbot_email        = "you@example.com"              # receives Let's Encrypt expiry warnings
